@@ -4,27 +4,22 @@ import "./App.css";
 import Header from "./components/header";
 import Jumbotron from "./components/jumbotron";
 import Cards from "./components/cards";
+import Footer from "./components/footer";
 
 class App extends Component {
-  state = {
-    alumni: [
-      { id: 1, name: "a" },
-      { id: 2, name: "b" },
-      { id: 3, name: "c" },
-      { id: 4, name: "d" }
-    ]
-  };
+  state = {};
   render() {
     return (
       <React.Fragment>
         <Header />
         <Jumbotron />
-        <div className="container">
-          <div className="wrap">
-            {this.state.alumni.map(card => (
-              <Cards />
-            ))}
-          </div>
+        <div>
+          <div className="bnf bn1">a</div>
+          <div className="bn bn2">a</div>
+          <div className="bnf bn3">a</div>
+          <div className="bn bn4">a</div>
+          <div className="bnf bn5">a</div>
+          <div className="bn bn6">a</div>
         </div>
       </React.Fragment>
     );
